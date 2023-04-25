@@ -91,7 +91,7 @@ namespace SoftwareHouse
 
 			if( (Servidor == "") | (Servidor == null) )
 			{
-				//Entendo que estou em debug e não sei de onde este .NET tenta l�r o arquivo
+				//Entendo que estou em debug e não sei de onde este .NET tenta ler o arquivo
 				Servidor = @"(local)\SoftwareHouse";
 				Banco = "ProcessoVSAT";
 				UsuarioBanco = "sa";
