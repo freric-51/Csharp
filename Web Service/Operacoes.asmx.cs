@@ -21,8 +21,8 @@ namespace SoftwareHouse
 		private Execucao ExeClone = new Execucao();
 		private SoftwareHouse.Log log = new SoftwareHouse.Log();
 
-		//Como enumerador n�o funciona com WebService,
-		//as constantes de opera��o s�o as seguintes:
+		//Como enumerador não funciona com WebService,
+		//as constantes de operação são as seguintes:
 		//Ricardo de Freitas - Criadas ''propriedades''
 		public enum eOperacoes :int
 		{
@@ -91,7 +91,7 @@ namespace SoftwareHouse
 
 			if( (Servidor == "") | (Servidor == null) )
 			{
-				//Entendo que estou em debug e n�o sei de onde este .NET tenta l�r o arquivo
+				//Entendo que estou em debug e não sei de onde este .NET tenta l�r o arquivo
 				Servidor = @"(local)\SoftwareHouse";
 				Banco = "ProcessoVSAT";
 				UsuarioBanco = "sa";
@@ -154,7 +154,7 @@ namespace SoftwareHouse
 				oCnn = null;
 				oCmd = null;
 				oRet.Status = 1;
-				oRet.Descricao = ex.Message + " Conex�o = " + sConexaoBanco;
+				oRet.Descricao = ex.Message + " Conexão = " + sConexaoBanco;
 				return oRet;
 			}
 
@@ -202,7 +202,7 @@ namespace SoftwareHouse
 			if (iRet == 0 )
 			{
 				oRet.Status = 1;
-				oRet.Descricao ="N�o foi registrado a instala��o.";
+				oRet.Descricao ="Não foi registrado a instalação.";
 			}
 			else
 			{
@@ -237,7 +237,7 @@ namespace SoftwareHouse
 				oCnn = null;
 				oCmd = null;
 				oRet.Status = 1;
-				oRet.Descricao = ex.Message + " Conex�o = " + sConexaoBanco;
+				oRet.Descricao = ex.Message + " Conexão = " + sConexaoBanco;
 				oRet.TipoInstalacao="";
 				return oRet;
 			}
@@ -316,7 +316,7 @@ namespace SoftwareHouse
 				if(TemRetaguarda)
 					return "SU";//SuperDB
 				else
-					return "ES";//Esta��o sem PDVArq e SuperDB
+					return "ES";//Estação sem PDVArq e SuperDB
 			}
 		}
 
@@ -365,7 +365,7 @@ namespace SoftwareHouse
 				oCnn = null;
 				oCmd = null;
 				oRet.Status = 1;
-				oRet.Descricao = ex.Message + " Conex�o = " + sConexaoBanco;
+				oRet.Descricao = ex.Message + " Conexão = " + sConexaoBanco;
 				return oRet;
 			}
 
@@ -500,7 +500,7 @@ namespace SoftwareHouse
 				oCnn = null;
 				oCmd = null;
 				oRet.Status = 1;
-				oRet.Descricao = ex.Message + " Conex�o = " + sConexaoBanco;
+				oRet.Descricao = ex.Message + " Conexão = " + sConexaoBanco;
 				return oRet;
 			}
 
@@ -596,7 +596,7 @@ namespace SoftwareHouse
 			if (iRet == 0 )
 			{
 				oRet.Status = 1;
-				oRet.Descricao ="N�o foi registrado a instala��o.";
+				oRet.Descricao ="Não foi registrado a instalação.";
 			}
 			else
 			{
